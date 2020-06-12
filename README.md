@@ -1,2 +1,1 @@
-
-Please view the [README](plated/README.md) in the plated directory.
+Upload and convert IATI data into other data.
