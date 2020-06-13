@@ -11,7 +11,7 @@
     "brfs": "^2.0.2",
     "browserify": "^16.5.1",
     "browserify-css": "^0.15.0",
-    "d-portal": "0.0.24",
+    "d-portal": "0.0.25",
     "ecstatic": "*",
     "exorcist": "^1.0.1",
     "jquery": "^3.5.1",

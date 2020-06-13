@@ -7,8 +7,6 @@ var switcheroo=exports;
 let jquery=require("jquery")
 let $=jquery
 
-var stringify = require('json-stable-stringify');
-
 let dflat=require("d-portal/dflat/js/dflat.js")
 
 
@@ -18,6 +16,7 @@ switcheroo.act_count=0
 switcheroo.org_count=0
 
 switcheroo.data      = false;
+switcheroo.data_json = false;
 switcheroo.data_xml  = false;
 switcheroo.data_csv  = false;
 switcheroo.data_html = false;
@@ -118,21 +117,17 @@ switcheroo.convert=function()
 	console.log("orgs : "+switcheroo.org_count)
 	
 	if( switcheroo.act_count + switcheroo.org_count > 0 ) // we have some data so convert it
-	{
+	{ 
+		dflat.clean(x) // clean up the data
+		switcheroo.data_json=dflat.xson_to_string(x)
 		switcheroo.data_xml=dflat.xson_to_xml(x)
-		if( switcheroo.org_count > 0 )
-		{
-			switcheroo.data_csv=dflat.xson_to_xsv(x,"/iati-organisations/iati-organisation",{"/iati-organisations/iati-organisation":true})
-		}
-		else
-		{
-			switcheroo.data_csv=dflat.xson_to_xsv(x,"/iati-activities/iati-activity",{"/iati-activities/iati-activity":true})
-		}
+		switcheroo.data_csv=dflat.xson_to_xsv(x)
 		switcheroo.data_html=dflat.xson_to_html(x)
 	}
 	else
 	{
 		switcheroo.data = false;
+		switcheroo.data_json = false;
 		switcheroo.data_xml  = false;
 		switcheroo.data_csv  = false;
 		switcheroo.data_html = false;
@@ -185,7 +180,7 @@ switcheroo.fixup_download=function()
 		$("#switcheroo_xml").attr('download', "switcheroo.xml")
 
 		$("#switcheroo_json").show()
-		$("#switcheroo_json").attr('href', 'data:application/json;charset=utf-8,' + encodeURIComponent( stringify(switcheroo.data,{space:" "}) ))
+		$("#switcheroo_json").attr('href', 'data:application/json;charset=utf-8,' + encodeURIComponent(switcheroo.data_json))
 		$("#switcheroo_json").attr('download', "switcheroo.json")
 
 		$("#switcheroo_csv").show()
