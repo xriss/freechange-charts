@@ -15,6 +15,7 @@
     "ecstatic": "*",
     "exorcist": "^1.0.1",
     "jquery": "^3.5.1",
+    "json-stable-stringify": "^1.0.1",
     "npx": "^10.2.2",
     "plated": "*",
     "uglifyify": "^5.0.2",
