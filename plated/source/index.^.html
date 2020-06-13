@@ -25,24 +25,21 @@ IATI Switcheroo
 #^body trim=ends form=markdown
 
 <div class="content_wrap">
-<<<<<<< HEAD
-	<div class="upload_box">
-		<div class="upload_text">Upload IATI data</div>
-		<div class="upload_data">csv</div><div class="upload_data">json</div><div class="upload_data">xml</div><div class="upload_data">html</div>
-	</div>
-=======
+	<div class="text"><span class="logo">IATI Switcheroo</span> converts your IATI data into <span class="ace">csv</span>, <span class="ace">json</span>, <span class="ace">xml</span> and <span class="ace">html</span> and back again.</div>
 	<form>
-		<div class="upload_box" id="switcheroo_box" >
-			<input type="file" name="file" id="switcheroo_file" />
-			Upload IATI data
+		<div class="upload_box" id="switcheroo_box">
+			<label class="upload_label">
+				<input class="upload_input" type="file" name="file" id="switcheroo_file" aria-label="Upload File"/>
+				<span class="upload_text">Click or drag and drop to upload IATI data</span>
+			</label>
 		</div>
 	</form>
-		<a id="switcheroo_html">Download HTML</a>
-		<a id="switcheroo_json">Download JSON</a>
-		<a id="switcheroo_csv">Download CSV</a>
-		<a id="switcheroo_xml">Download XML</a>
->>>>>>> e5e8ca5def6b3f9d84ab87fb8e800e65d87fb5dc
-	<div class="text"><span class="logo">IATI Switcheroo</span> converts your IATI data into <span class="ace">csv</span>, <span class="ace">json</span>, <span class="ace">xml</span> and <span class="ace">html</span> and back again.</div>
+	<div class="data_wrap">
+		<a id="switcheroo_html" class="upload_data">HTML <span>&#10145;</span></a>
+		<a id="switcheroo_json" class="upload_data">JSON <span>&#10145;</span></a>
+		<a id="switcheroo_csv" class="upload_data">CSV <span>&#10145;</span></a>
+		<a id="switcheroo_xml" class="upload_data">XML <span>&#10145;</span></a>
+	</div>
 </div>
 
 
