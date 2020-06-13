@@ -1,0 +1,9 @@
+cd `dirname $0`
+
+echo " git adding everything apart from generated files in docs "
+
+git reset docs
+git checkout docs
+git add .
+
+
