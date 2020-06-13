@@ -3,7 +3,9 @@ cd `dirname $0`
 echo " git adding everything apart from generated files in docs "
 
 git reset docs
+git reset plated/source/js
 git checkout docs
+git checkout plated/source/js
 git add .
 
 
