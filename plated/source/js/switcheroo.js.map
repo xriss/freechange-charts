@@ -1,0 +1,15 @@
+{
+  "version": 3,
+  "sources": [
+    "node_modules/browser-pack/_prelude.js",
+    "js/switcheroo.js"
+  ],
+  "names": [],
+  "mappings": "AAAA;ACAA;AACA;AACA",
+  "file": "generated.js",
+  "sourceRoot": "",
+  "sourcesContent": [
+    "(function(){function r(e,n,t){function o(i,f){if(!n[i]){if(!e[i]){var c=\"function\"==typeof require&&require;if(!f&&c)return c(i,!0);if(u)return u(i,!0);var a=new Error(\"Cannot find module '\"+i+\"'\");throw a.code=\"MODULE_NOT_FOUND\",a}var p=n[i]={exports:{}};e[i][0].call(p.exports,function(r){var n=e[i][1][r];return o(n||r)},p,p.exports,r,e,n,t)}return n[i].exports}for(var u=\"function\"==typeof require&&require,i=0;i<t.length;i++)o(t[i]);return o}return r})()",
+    "var switcheroo=exports;switcheroo.start=function(){console.log(\"IATIswitcheroo\")};\n\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInN3aXRjaGVyb28uanMiXSwibmFtZXMiOlsic3dpdGNoZXJvbyIsImV4cG9ydHMiLCJzdGFydCIsImNvbnNvbGUiLCJsb2ciXSwibWFwcGluZ3MiOiJBQUVBLElBQUlBLFdBQVdDLFFBSWZELFdBQVdFLE1BQVEsV0FFbEJDLFFBQVFDLElBQUkiLCJmaWxlIjoiL2hvbWUva3Jpc3MvZ2l0L0lBVElzd2l0Y2hlcm9vL2pzL3N3aXRjaGVyb28uanMifQ=="
+  ]
+}

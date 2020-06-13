@@ -1,0 +1,23 @@
+{
+  "private": true,
+  "name": "IATIswitcheroo",
+  "description": "convert IATI data online",
+  "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/notshi/IATIswitcheroo.git"
+  },
+  "dependencies": {
+    "brfs": "^2.0.2",
+    "browserify": "^16.5.1",
+    "browserify-css": "^0.15.0",
+    "d-portal": "0.0.20",
+    "ecstatic": "*",
+    "exorcist": "^1.0.1",
+    "jquery": "^3.5.1",
+    "npx": "^10.2.2",
+    "plated": "*",
+    "uglifyify": "^5.0.2",
+    "watchify": "^3.11.1"
+  }
+}
