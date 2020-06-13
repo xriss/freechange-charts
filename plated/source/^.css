@@ -2,14 +2,15 @@
 
 /*! minireset.css v0.0.3 | MIT License | github.com/jgthms/minireset.css */html,body,p,ol,ul,li,dl,dt,dd,blockquote,figure,fieldset,legend,textarea,pre,iframe,hr,h1,h2,h3,h4,h5,h6{margin:0;padding:0}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}ul{list-style:none}button,input,select,textarea{margin:0}html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}img,embed,iframe,object,audio,video{height:auto;max-width:100%}iframe{border:0}table{border-collapse:collapse;border-spacing:0}td,th{padding:0;text-align:left}
 
-body	{background:#deebec; font-family:sans-serif; font-size:18px; line-height:24px; color:#444; width:100%;}
+body	{background:#ffe406; font-family:sans-serif; font-size:18px; line-height:24px; color:#444; width:100%;}
 a		{-webkit-transition: all .2s ease-in-out; -moz-transition: all .2s ease-in-out; -o-transition: all .2s ease-in-out; -ms-transition: all .2s ease-in-out; transition: all .2s ease-in-out;}
+.lblue	{color:#deebec;}
 .yellow	{color:#ffe406;}
 .dblue	{color:#0a84aa;}
 
 .content_wrap	{width:960px; margin:0 auto; position:relative;}
 .data_wrap		{margin:0 auto; text-align:center;}
-.back			{position:absolute; top:0; left:0; background-color:#1a62d2; height:400px; width:100%;}
+.back			{position:absolute; top:0; left:0; background:url('data/banana.jpg') no-repeat top center #1a62d2; background-size:cover; height:400px; width:100%;}
 .upload_box 	{border:1px solid #0a84aa; border-radius:8px; padding:200px 0; margin:0 auto; text-align:center; background:#fff;}
 .upload_box:hover 	{background:#fff;}
 .upload_label	{position:relative; cursor:pointer; padding:200px 0;}
@@ -17,11 +18,12 @@ a		{-webkit-transition: all .2s ease-in-out; -moz-transition: all .2s ease-in-ou
 .upload_text	{position:absolute; top:0; left:0; width:100%; padding:200px 0; font-size:22px; color:#666;}
 .upload_data	{display:inline-block; width:15%; border:1px solid #0a84aa; border-radius:8px; margin-right:15px; padding:20px 0; background-color:#f0f6f7; color:#444; text-decoration:none; text-align:center; font-size:18px;}
 .upload_data:hover	{background-color:#fff;}
-.upload_data span	{display:inline-block; transform:rotate(90deg);}
-.text			{padding:4em 0 1.5em 0; color:#fff;}
-.logo			{font-size:30px; line-height:1.5em;}
-.ace			{font-style:italic; font-family:monospace; background:#f4feff; color:#444; padding:0 5px; border-radius:4px;}
+.upload_data span	{display:inline-block; transform:rotate(90deg); color:#034dfb;}
+.text			{padding:5em 0 1.5em 0; color:#fff;}
+.logo			{font-size:30px; font-weight:bold; line-height:1.5em;}
+.subtext		{font-size:24px;}
+.ace			{font-style:italic; font-family:monospace; background:#f4feff; color:#034dfb; padding:0 5px; border-radius:4px;}
 .contact		{margin-top:2em; font-size:14px; line-height:1.5em;}
-.contact a		{color:#222; text-decoration:none; font-style:italic; font-family:monospace; background:#deebec; padding:0 5px; border-radius:4px;}
-.contact a:hover{color:#222; text-decoration:none; background:#f4feff;}
+.contact a		{color:#034dfb; text-decoration:none; font-style:italic; font-family:monospace; background:#ffe406; padding:0 5px; border-radius:4px;}
+.contact a:hover{color:#034dfb; text-decoration:none; background:#fff;}
 
