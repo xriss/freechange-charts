@@ -24,18 +24,29 @@ IATI Switcheroo
 #^------------------------------
 #^body trim=ends form=markdown
 
+<div class="back"></div>
 <div class="content_wrap">
+	<div class="text">
+		<div class="logo">IATI Switcheroo</div>
+		<div>converts your IATI data into <span class="ace">csv</span>, <span class="ace">json</span>, <span class="ace">xml</span> and <span class="ace">html</span> and back again.</div>
+	</div>
 	<form>
-		<div class="upload_box" id="switcheroo_box" >
-			<input type="file" name="file" id="switcheroo_file" />
-			Upload IATI data
+		<div class="upload_box" id="switcheroo_box">
+			<label class="upload_label">
+				<input class="upload_input" type="file" name="file" id="switcheroo_file" aria-label="Upload File"/>
+				<span class="upload_text">Click or drag and drop to upload IATI data</span>
+			</label>
 		</div>
 	</form>
-		<a id="switcheroo_html">Download HTML</a>
-		<a id="switcheroo_json">Download JSON</a>
-		<a id="switcheroo_csv">Download CSV</a>
-		<a id="switcheroo_xml">Download XML</a>
-	<div class="text"><span class="logo">IATI Switcheroo</span> converts your IATI data into <span class="ace">csv</span>, <span class="ace">json</span>, <span class="ace">xml</span> and <span class="ace">html</span> and back again.</div>
+	<div class="data_wrap">
+		<a id="switcheroo_csv" class="upload_data">CSV <span>&#10145;</span></a>
+		<a id="switcheroo_json" class="upload_data">JSON <span>&#10145;</span></a>		
+		<a id="switcheroo_xml" class="upload_data">XML <span>&#10145;</span></a>
+		<a id="switcheroo_html" class="upload_data">HTML <span>&#10145;</span></a>
+	</div>
+	<div class="contact">
+		Data conversion is made locally in the browser and never sent to an external server.<br/>
+		Project page, issues and feedback on <a href="https://github.com/notshi/IATIswitcheroo" target="_blank">Github</a></div>
 </div>
 
 
