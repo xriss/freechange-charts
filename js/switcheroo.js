@@ -2,7 +2,7 @@
 
 var switcheroo=exports;
 
-
+let path=require("path")
 
 let jquery=require("jquery")
 let $=jquery
@@ -28,7 +28,7 @@ switcheroo.start = function()
 	// make sure the page has finished loading
 	$(function(){
 		
-		console.log("Starting IATIswitcheroo v0.2")
+		console.log("Starting IATIswitcheroo v0.3")
 
 		switcheroo.fixup()
 
@@ -43,6 +43,10 @@ switcheroo.load=function()
 	if( switcheroo.got_files )
 	{
 		let f = switcheroo.got_files[0];
+
+		switcheroo.data_name = f.name || "switcheroo"
+		switcheroo.data_name = path.basename( switcheroo.data_name , path.extname( switcheroo.data_name ) )
+
 		var reader = new FileReader();
 		reader.onload = (function(theFile) {
 			return function(e) {
@@ -173,19 +177,19 @@ switcheroo.fixup_download=function()
 	{
 		$("#switcheroo_html").show()
 		$("#switcheroo_html").attr('href', 'data:text/html;charset=utf-8,' + encodeURIComponent(switcheroo.data_html) )
-		$("#switcheroo_html").attr('download', "switcheroo.html")
+		$("#switcheroo_html").attr('download', switcheroo.data_name+".html")
 
 		$("#switcheroo_xml").show()
 		$("#switcheroo_xml").attr('href', 'data:text/xml;charset=utf-8,' + encodeURIComponent(switcheroo.data_xml))
-		$("#switcheroo_xml").attr('download', "switcheroo.xml")
+		$("#switcheroo_xml").attr('download', switcheroo.data_name+".xml")
 
 		$("#switcheroo_json").show()
 		$("#switcheroo_json").attr('href', 'data:application/json;charset=utf-8,' + encodeURIComponent(switcheroo.data_json))
-		$("#switcheroo_json").attr('download', "switcheroo.json")
+		$("#switcheroo_json").attr('download', switcheroo.data_name+".json")
 
 		$("#switcheroo_csv").show()
 		$("#switcheroo_csv").attr('href', 'data:text/csv;charset=utf-8,' + encodeURIComponent( switcheroo.data_csv ))
-		$("#switcheroo_csv").attr('download', "switcheroo.csv")
+		$("#switcheroo_csv").attr('download', switcheroo.data_name+".csv")
 
 	}
 	else
