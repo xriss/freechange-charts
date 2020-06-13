@@ -9,6 +9,8 @@ a		{color:#1400ff;}
 
 .content_wrap	{width:960px; margin:0 auto;}
 .upload_box 	{border:1px solid #b3bcd2; border-radius:8px; margin:0 auto; text-align:center; background:#fff; padding:200px 0;}
+.upload_text	{margin-bottom:2em;}
+.upload_data	{display:inline-block; width:15%; border:1px solid #ccc; margin-right:15px; padding:20px 0;}
 .text			{margin-top:2em;}
 .text span.logo	{font-weight:bold; color:#0a84aa;}
 .text span.ace	{font-style:italic; font-family:monospace; background:#f4feff; padding:0 5px; border-radius:4px;}
