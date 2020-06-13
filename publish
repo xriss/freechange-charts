@@ -1,0 +1,12 @@
+cd `dirname $0`
+
+./git-add
+git pull
+
+./build
+plated/build
+git add .
+git commit -m"publish"
+git pull
+git push
+
