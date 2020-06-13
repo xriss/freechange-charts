@@ -29,7 +29,7 @@ switcheroo.start = function()
 	// make sure the page has finished loading
 	$(function(){
 		
-		console.log("Starting IATIswitcheroo")
+		console.log("Starting IATIswitcheroo v0.1")
 
 		switcheroo.fixup()
 
