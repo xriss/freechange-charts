@@ -1,4 +1,4 @@
-![iatiswitcheroo](https://user-images.githubusercontent.com/1515961/84581895-9eb10380-addd-11ea-9094-890b94bbd694.png)
+![iatiswitcheroo](https://user-images.githubusercontent.com/1515961/84593361-c20e9980-ae43-11ea-86b1-e1dc234dfe21.png)
 
 
 Data conversion is made locally in the browser and never sent to an external server.  
