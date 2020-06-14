@@ -2,7 +2,7 @@
 <head><meta charset="UTF-8">
 
 <title>IATI Switcheroo</title>
-
+<link href="https://fonts.googleapis.com/css2?family=Arbutus+Slab&display=swap" rel="stylesheet">
 <script type="text/javascript" src="js/switcheroo.js"></script>
 <script type="text/javascript">
 	require("switcheroo").start()
@@ -13,30 +13,33 @@
 /*! minireset.css v0.0.3 | MIT License | github.com/jgthms/minireset.css */html,body,p,ol,ul,li,dl,dt,dd,blockquote,figure,fieldset,legend,textarea,pre,iframe,hr,h1,h2,h3,h4,h5,h6{margin:0;padding:0}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}ul{list-style:none}button,input,select,textarea{margin:0}html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}img,embed,iframe,object,audio,video{height:auto;max-width:100%}iframe{border:0}table{border-collapse:collapse;border-spacing:0}td,th{padding:0;text-align:left}
 
 * {box-sizing:border-box;}
-body	{background:#ffe406; font-family:sans-serif; font-size:18px; line-height:24px; color:#444; width:100%;}
+body	{background:#fff; font-family:sans-serif; font-size:18px; line-height:24px; color:#444; width:100%;}
 a		{-webkit-transition: all .2s ease-in-out; -moz-transition: all .2s ease-in-out; -o-transition: all .2s ease-in-out; -ms-transition: all .2s ease-in-out; transition: all .2s ease-in-out;}
 .lblue	{color:#deebec;}
 .yellow	{color:#ffe406;}
 .dblue	{color:#0a84aa;}
+.art	{font-family:'Arbutus Slab',serif; font-size:36px; color:#444; text-align:center; line-height:40px; margin:0 auto;}
 
 .content_wrap	{width:960px; margin:0 auto; position:relative;}
 .data_wrap		{margin:0 auto; text-align:center;}
-.back			{position:absolute; top:0; left:0; background:url('data/satellite.jpg') no-repeat bottom center #1a62d2; background-size:cover; height:400px; width:100%;}
-.upload_box 	{border:1px solid #0a84aa; border-radius:8px; padding:200px 0; margin:0 auto; text-align:center; background:#fff;}
-.upload_box:hover 	{background:#fff;}
+.upload_box 	{padding:200px 0; margin:0 auto; text-align:center; background:#fff; border:1px solid #000;}
 .upload_label	{position:relative; cursor:pointer; padding:200px 0;}
 .upload_input	{width:100%; filter:alpha(opacity=0); opacity:0;}
 .upload_text	{position:absolute; top:0; left:0; width:100%; padding:200px 0; font-size:22px; color:#666;}
-.upload_data	{display:inline-block; width:15%; border:1px solid #0a84aa; border-radius:8px; margin-right:15px; padding:20px 0; background-color:#f0f6f7; color:#444; text-decoration:none; text-align:center; font-size:18px;}
-.upload_data:hover	{background-color:#fff;}
-.upload_data span	{display:inline-block; transform:rotate(90deg); color:#034dfb;}
-.text			{padding:5em 0 1.5em 0; color:#fff;}
-.logo			{font-size:30px; font-weight:bold; line-height:1.5em;}
+.upload_data	{display:inline-block; width:15%; border:1px solid #fff; margin-right:15px; padding:20px 0; color:#444; text-decoration:none; text-align:center; font-size:18px;}
+.upload_data:hover	{border:1px solid #444;}
+.upload_data span	{display:inline-block; transform:rotate(90deg);}
+.text			{padding:5em 0 1.5em 0; width:80%; margin:0 auto;}
+.logo			{font-family:'Arbutus Slab',serif; font-weight:bold;}
 .subtext		{font-size:24px;}
 .ace			{font-style:italic; font-family:monospace; background:#f4feff; color:#034dfb; padding:0 5px; border-radius:4px;}
-.contact		{margin-top:2em; font-size:14px; line-height:1.5em;}
-.contact a		{color:#034dfb; text-decoration:none; font-style:italic; font-family:monospace; background:#ffe406; padding:0 5px; border-radius:4px;}
+.contact		{margin:0 auto; margin-top:2em; font-size:14px; line-height:1.5em; text-align:center;}
+.contact a		{color:#034dfb; text-decoration:none; font-style:italic; font-family:monospace; background:#eee; padding:0 5px; border-radius:4px;}
 .contact a:hover{color:#034dfb; text-decoration:none; background:#fff;}
+
+/*	BUBBLES	*/
+.bub 			{position:relative; background:#eee; border-radius:4px; padding:20px 30px; width:80%;}
+.bub:after		{content:''; position:absolute; top:37%; left:0; width:0; height:0; border:37px solid transparent; border-right-color:#eee; border-left:0; border-top:0; margin-left:-18.5px; margin-top:-37px;}
 
 /*	TICKER	*/
 @-webkit- ticker	{0% {-webkit-transform:translate3d(0,0,0); transform:translate3d(0,0,0); visibility:visible;} 100% {-webkit-transform:translate3d(-100%,0,0);transform:translate3d(-100%,0,0);}}
@@ -46,11 +49,11 @@ a		{-webkit-transition: all .2s ease-in-out; -moz-transition: all .2s ease-in-ou
 .tick				{display:inline-block; padding:0 1rem; font-size:20px; color:#fff;}
 
 </style></head>
-<body><div class="back"></div>
-<div class="content_wrap">
+<body><div class="content_wrap">
     <div class="text">
-        <div class="logo">IATI <span class="yellow">Switcheroo</span></div>
-        <div class="subtext">converts your IATI data into <span class="ace">csv</span>, <span class="ace">json</span>, <span class="ace">xml</span> and back again.</div>
+        <div class="art">
+            IATI Switcheroo converts your IATI data into <span class="data">csv</span>, <span class="data">json</span>, <span class="data">xml</span> and back again.
+        </div>
     </div>
     <form>
         <div class="upload_box" id="switcheroo_box">
@@ -68,9 +71,11 @@ a		{-webkit-transition: all .2s ease-in-out; -moz-transition: all .2s ease-in-ou
     </div>
     <div class="contact">
         Data conversion is made locally in the browser and never sent to an external server.<br/>
-        <b>IATI Switcheroo (v0.2)</b> is a web based version of the <a href="https://github.com/devinit/D-Portal/tree/master/dflat" target="_blank">dflat</a> command line tool.<br/>
+        <span class="logo">IATI Switcheroo (v0.2)</span> is a web based version of the <a href="https://github.com/devinit/D-Portal/tree/master/dflat" target="_blank">dflat</a> command line tool.<br/>
         Project page, issues and feedback on <a href="https://github.com/notshi/IATIswitcheroo" target="_blank">Github</a>.
     </div>
+
+
 </div>
 <a href="https://blacklivesmatters.carrd.co/" target="_blank" class="ticker_wrap">
     <span class="ticker">
