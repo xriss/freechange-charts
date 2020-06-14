@@ -2,6 +2,7 @@
 
 /*! minireset.css v0.0.3 | MIT License | github.com/jgthms/minireset.css */html,body,p,ol,ul,li,dl,dt,dd,blockquote,figure,fieldset,legend,textarea,pre,iframe,hr,h1,h2,h3,h4,h5,h6{margin:0;padding:0}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}ul{list-style:none}button,input,select,textarea{margin:0}html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}img,embed,iframe,object,audio,video{height:auto;max-width:100%}iframe{border:0}table{border-collapse:collapse;border-spacing:0}td,th{padding:0;text-align:left}
 
+* {box-sizing:border-box;}
 body	{background:#ffe406; font-family:sans-serif; font-size:18px; line-height:24px; color:#444; width:100%;}
 a		{-webkit-transition: all .2s ease-in-out; -moz-transition: all .2s ease-in-out; -o-transition: all .2s ease-in-out; -ms-transition: all .2s ease-in-out; transition: all .2s ease-in-out;}
 .lblue	{color:#deebec;}
@@ -10,7 +11,7 @@ a		{-webkit-transition: all .2s ease-in-out; -moz-transition: all .2s ease-in-ou
 
 .content_wrap	{width:960px; margin:0 auto; position:relative;}
 .data_wrap		{margin:0 auto; text-align:center;}
-.back			{position:absolute; top:0; left:0; background:url('data/banana.jpg') no-repeat top center #1a62d2; background-size:cover; height:400px; width:100%;}
+.back			{position:absolute; top:0; left:0; background:url('data/satellite.jpg') no-repeat bottom center #1a62d2; background-size:cover; height:400px; width:100%;}
 .upload_box 	{border:1px solid #0a84aa; border-radius:8px; padding:200px 0; margin:0 auto; text-align:center; background:#fff;}
 .upload_box:hover 	{background:#fff;}
 .upload_label	{position:relative; cursor:pointer; padding:200px 0;}
@@ -27,3 +28,9 @@ a		{-webkit-transition: all .2s ease-in-out; -moz-transition: all .2s ease-in-ou
 .contact a		{color:#034dfb; text-decoration:none; font-style:italic; font-family:monospace; background:#ffe406; padding:0 5px; border-radius:4px;}
 .contact a:hover{color:#034dfb; text-decoration:none; background:#fff;}
 
+/*	TICKER	*/
+@-webkit- ticker	{0% {-webkit-transform:translate3d(0,0,0); transform:translate3d(0,0,0); visibility:visible;} 100% {-webkit-transform:translate3d(-100%,0,0);transform:translate3d(-100%,0,0);}}
+@keyframes ticker	{0% {-webkit-transform:translate3d(0,0,0); transform:translate3d(0,0,0); visibility:visible;} 100% {-webkit-transform:translate3d(-100%,0,0);transform:translate3d(-100%,0,0);}}
+.ticker_wrap		{display:block; position:fixed; bottom:0; width:100%; overflow:hidden; height:4rem; background-color:#000; padding-left:100%;}
+.ticker				{display:inline-block; height:4rem; line-height:4rem; white-space:nowrap; padding-right:100%; box-sizing:content-box; -webkit-animation-iteration-count:infinite; animation-iteration-count:infinite; -webkit-animation-timing-function:linear; animation-timing-function:linear; -webkit-animation-name:ticker; animation-name:ticker; -webkit-animation-duration:10s; animation-duration:10s;}
+.tick				{display:inline-block; padding:0 1rem; font-size:20px; color:#fff;}
