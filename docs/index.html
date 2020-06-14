@@ -18,7 +18,10 @@ a		{-webkit-transition: all .2s ease-in-out; -moz-transition: all .2s ease-in-ou
 
 .content_wrap	{width:960px; margin:0 auto; position:relative;}
 .data_wrap		{margin:0 auto; text-align:center;}
-.upload_box 	{padding:200px 0; margin:0 auto; text-align:center; background:#fff; border:1px solid #000;}
+.upload_box 	{padding:200px 0; margin:0 auto; text-align:center; background:#fff; border:1px solid #000; max-height:429px;}
+.is-dragover	{background:#fff; font-size:10em; line-height:0; padding:150px 0 250px 0;}
+.is-dragover:after	{content:"\01F44D";}
+.is-dragover .upload_text	{display:none;}
 .upload_label	{position:relative; cursor:pointer; padding:200px 0;}
 .upload_input	{width:100%; filter:alpha(opacity=0); opacity:0;}
 .upload_text	{position:absolute; top:0; left:0; width:100%; padding:200px 0; font-size:22px; color:#666;}
