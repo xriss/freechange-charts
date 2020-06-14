@@ -5,10 +5,6 @@
 * {box-sizing:border-box;}
 body	{background:#fff; font-family:sans-serif; font-size:18px; line-height:24px; color:#444; width:100%;}
 a		{-webkit-transition: all .2s ease-in-out; -moz-transition: all .2s ease-in-out; -o-transition: all .2s ease-in-out; -ms-transition: all .2s ease-in-out; transition: all .2s ease-in-out;}
-.lblue	{color:#deebec;}
-.yellow	{color:#ffe406;}
-.dblue	{color:#0a84aa;}
-.art	{font-family:'Arbutus Slab',serif; font-size:36px; color:#444; text-align:center; line-height:40px; margin:0 auto;}
 
 .content_wrap	{width:960px; margin:0 auto; position:relative;}
 .data_wrap		{margin:0 auto; text-align:center;}
@@ -21,8 +17,7 @@ a		{-webkit-transition: all .2s ease-in-out; -moz-transition: all .2s ease-in-ou
 .upload_data span	{display:inline-block; transform:rotate(90deg);}
 .text			{padding:5em 0 1.5em 0; width:80%; margin:0 auto;}
 .logo			{font-family:'Arbutus Slab',serif; font-weight:bold;}
-.subtext		{font-size:24px;}
-.ace			{font-style:italic; font-family:monospace; background:#f4feff; color:#034dfb; padding:0 5px; border-radius:4px;}
+.art			{font-family:'Arbutus Slab',serif; font-size:36px; color:#444; text-align:center; line-height:40px; margin:0 auto;}
 .contact		{margin:0 auto; margin-top:2em; font-size:14px; line-height:1.5em; text-align:center;}
 .contact a		{color:#034dfb; text-decoration:none; font-style:italic; font-family:monospace; background:#eee; padding:0 5px; border-radius:4px;}
 .contact a:hover{color:#034dfb; text-decoration:none; background:#fff;}
@@ -37,3 +32,14 @@ a		{-webkit-transition: all .2s ease-in-out; -moz-transition: all .2s ease-in-ou
 .ticker_wrap		{display:block; position:fixed; bottom:0; width:100%; overflow:hidden; height:4rem; background-color:#000; padding-left:100%; box-sizing:content-box;}
 .ticker				{display:inline-block; height:4rem; line-height:4rem; white-space:nowrap; padding-right:100%; box-sizing:content-box; -webkit-animation-iteration-count:infinite; animation-iteration-count:infinite; -webkit-animation-timing-function:linear; animation-timing-function:linear; -webkit-animation-name:ticker; animation-name:ticker; -webkit-animation-duration:20s; animation-duration:20s;}
 .tick				{display:inline-block; padding:0 1rem; font-size:20px; color:#fff;}
+
+@media screen and (max-width:600px) {
+	.text			{padding:2em 0;}
+	.upload_box	,
+	.contact		{width:85%;}
+	.upload_box,
+	.upload_label	{padding:50px 0;}
+	.upload_text	{padding:40px 0;}
+	.content_wrap	{width:initial;}
+	br				{margin-bottom:20px;}
+}
