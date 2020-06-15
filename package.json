@@ -1,17 +1,17 @@
 {
   "private": true,
-  "name": "IATIswitcheroo",
-  "description": "convert IATI data online",
+  "name": "freechange-test",
+  "description": "display freechange data as graphs in a webpage",
   "version": "0.0.1",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/notshi/IATIswitcheroo.git"
+    "url": "git+https://github.com/notshi/freechange-test.git"
   },
   "dependencies": {
     "brfs": "^2.0.2",
     "browserify": "^16.5.1",
     "browserify-css": "^0.15.0",
-    "d-portal": "0.0.25",
+    "freechange": "*",
     "ecstatic": "*",
     "exorcist": "^1.0.1",
     "jquery": "^3.5.1",

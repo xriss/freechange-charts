@@ -2,5 +2,5 @@ cd `dirname $0`
 
 echo "browserify"
 
-npx browserify -t brfs -g [ browserify-css --autoInject=false --minify=true --stripComments=true ] -g uglifyify -r ./js/switcheroo.js:switcheroo -d | npx exorcist ./plated/source/js/switcheroo.js.map > ./plated/source/js/switcheroo.js
+npx browserify -t brfs -g [ browserify-css --autoInject=false --minify=true --stripComments=true ] -g uglifyify -r ./js/freechange.js:freechange -d | npx exorcist ./plated/source/js/freechange.js.map > ./plated/source/js/freechange.js
 

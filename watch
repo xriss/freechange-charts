@@ -1,5 +1,5 @@
 cd `dirname $0`
 
 echo "watchify"
-npx watchify -t brfs -g [ browserify-css --autoInject=false --minify=true --stripComments=true ] -v -r ./js/switcheroo.js:switcheroo -d -o ./plated/source/js/switcheroo.js
+npx watchify -t brfs -g [ browserify-css --autoInject=false --minify=true --stripComments=true ] -v -r ./js/freechange.js:freechange -d -o ./plated/source/js/freechange.js
 

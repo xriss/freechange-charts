@@ -2,17 +2,15 @@
 #^------------------------------
 #^title trim=ends
 
-IATI Switcheroo
+freechange
 
 #^head trim=ends
 
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{title}</title>
-<link href="https://fonts.googleapis.com/css2?family=Arbutus+Slab&display=swap" rel="stylesheet">
-<script type="text/javascript" src="js/switcheroo.js"></script>
+<script type="text/javascript" src="js/freechange.js"></script>
 <script type="text/javascript">
-	require("switcheroo").start()
+	require("freechange").start()
 </script>
 
 <style>
@@ -24,38 +22,6 @@ IATI Switcheroo
 #^------------------------------
 #^body trim=ends form=markdown
 
-<div class="content_wrap">
-	<div class="text">
-		<div class="art">
-			IATI Switcheroo converts your IATI data into <span class="data">csv</span>, <span class="data">json</span>, <span class="data">xml</span> and back again.
-		</div>
-	</div>
-	<form>
-		<div class="upload_box" id="switcheroo_box">
-			<label class="upload_label">
-				<input class="upload_input" type="file" name="file" id="switcheroo_file" aria-label="Upload File"/>
-				<span class="upload_text">Click or drag and drop to upload IATI data</span>
-			</label>
-		</div>
-	</form>
-	<div class="data_wrap">
-		<a id="switcheroo_csv" class="upload_data">CSV <span>&#10145;</span></a>
-		<a id="switcheroo_json" class="upload_data">JSON <span>&#10145;</span></a>		
-		<a id="switcheroo_xml" class="upload_data">XML <span>&#10145;</span></a>
-		<a id="switcheroo_html" class="upload_data">HTML <span>&#10145;</span></a>
-	</div>
-	<div class="contact">
-		Data conversion is made locally in the browser and never sent to an external server.<br/>
-		<span class="logo">IATI Switcheroo (v0.2)</span> is a web based version of the <a href="https://github.com/devinit/D-Portal/tree/master/dflat" target="_blank">dflat</a> command line tool.<br/>
-		Project page, issues and feedback on <a href="https://github.com/notshi/IATIswitcheroo" target="_blank">Github</a>.
-	</div>
-	
-	
+<div id="freechange-div">
+
 </div>
-<a href="https://blacklivesmatters.carrd.co/" target="_blank" class="ticker_wrap">
-	<span class="ticker">
-		<span class="tick"><b>BLACK LIVES MATTER</b></span>
-		<span class="tick">Click here for ways to support those on the ground.</span>
-		<span class="tick">Educate ourselves and use our platforms to raise the voices of those directly impacted.</span>
-	</span>
-</a>
