@@ -11,6 +11,7 @@
     "brfs": "^2.0.2",
     "browserify": "^16.5.1",
     "browserify-css": "^0.15.0",
+    "chartist": "^0.11.4",
     "ecstatic": "*",
     "exorcist": "^1.0.1",
     "freechange": "*",
