@@ -3,6 +3,8 @@ cd `dirname $0`
 ./git-add
 git pull
 
+npm install freechange@latest
+
 ./build
 plated/build
 git add .
