@@ -17,6 +17,7 @@ let freechange_module=require("freechange")
 let freechange_day=require("freechange/json/usd_to_xxx_by_day.json")
 let freechange_month=require("freechange/json/usd_to_xxx_by_month.json")
 let freechange_year=require("freechange/json/usd_to_xxx_by_year.json")
+let freechange_names=require("freechange/json/currency_names.json")
 
 let currencies={}
 
@@ -56,7 +57,7 @@ freechange.fixup=function(){
 	{
 		for(let currency of currency_list)
 		{
-			$(this).append($('<option value="'+currency+'">'+currency+'</option>'))
+			$(this).append($('<option value="'+currency+'"> '+currency+' ( '+freechange_names[currency]+' ) </option>'))
 		}
 	})
 
