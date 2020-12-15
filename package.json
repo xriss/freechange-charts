@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "brfs": "^2.0.2",
-    "browserify": "^16.5.1",
+    "browserify": "^17.0.0",
     "browserify-css": "^0.15.0",
     "chartist": "^0.11.4",
     "chartist-plugin-tooltips-updated": "^0.1.3",
