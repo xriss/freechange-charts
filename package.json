@@ -15,7 +15,7 @@
     "chartist-plugin-tooltips-updated": "^0.1.4",
     "ecstatic": "*",
     "exorcist": "^2.0.0",
-    "freechange": "0.0.21",
+    "freechange": "0.0.26",
     "jquery": "^3.6.0",
     "json-stable-stringify": "^1.0.1",
     "npx": "^10.2.2",
