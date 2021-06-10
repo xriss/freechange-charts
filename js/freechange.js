@@ -176,13 +176,30 @@ freechange.draw_graphs=function(){
 			}),
 		]
   	}
+  	
+  	let responsiveOptions = [
+		['screen and (min-width: 641px) and (max-width: 1024px)', {
+		axisX: {
+		  labelInterpolationFnc: function(value) {
+			return (new Date(value*1000)).toISOString().slice(0,4);
+		  }
+		}
+		}],
+		['screen and (max-width: 640px)', {
+		axisX: {
+		  labelInterpolationFnc: function(value) {
+			return (new Date(value*1000)).toISOString().slice(0,4);
+		  }
+		}
+		}]
+		];
 
 
 	$("#freechange-chart-day").empty().each(function(idx)
 	{
 		var chart = new Chartist.Line( this, {
 		  series: day_series,
-		}, chart_options );
+		}, chart_options, responsiveOptions );
 
 	})
 
@@ -190,7 +207,7 @@ freechange.draw_graphs=function(){
 	{
 		var chart = new Chartist.Line( this, {
 		  series: month_series,
-		}, chart_options );
+		}, chart_options, responsiveOptions );
 
 	})
 
@@ -198,7 +215,7 @@ freechange.draw_graphs=function(){
 	{
 		var chart = new Chartist.Line( this, {
 		  series: year_series,
-		}, chart_options );
+		}, chart_options, responsiveOptions );
 
 	})
 
@@ -206,7 +223,7 @@ freechange.draw_graphs=function(){
 	{
 		var chart = new Chartist.Line( this, {
 		  series: [ day_series[0],month_series[0],year_series[0], ]
-		}, chart_options );
+		}, chart_options, responsiveOptions );
 
 	})
 
