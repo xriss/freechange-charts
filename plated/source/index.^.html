@@ -35,8 +35,15 @@ Freechange
 <div class="content_wrap">
 	<button class="sidebar-toggler" data-c4i-toggle="sidebar" type="button" aria-controls="c4i-sidebar" aria-expanded="false" aria-label="Toggle Code for IATI sidebar">
 		<span class="sidebar-icon"></span>
-	</button><div class="head_wrap">
-		<div class="head_text"><h1>Freechange gathers and displays historical exchange rates.</h1></div>
+	</button>
+	<div class="head_wrap">
+		<div class="head_text">
+			<h1><b>Freechange</b> is a javascript module and data to perform historical currency exchange.</h1>
+		</div>
+		<div class="head_code">
+			<div class="head_pre"><h2>> npm install freechange</h2></div>
+		</div>
+		<div class="head_butt"><a href="https://www.npmjs.com/package/freechange">npm</a><a href="https://npm.runkit.com/freechange">Try on Runkit</a></div>
 	</div>
 	<div id="freechange-div">
 		<div class="rate_option">
@@ -55,16 +62,36 @@ Freechange
 			<div id="freechange-chart-day" class="chart_wrap"></div>
 		</div>
 	</div>
+	<div class="mid_wrap">
+		<div class="text_wrap"><h3>We currently support historical exchange rates for 190 currencies.</h3></div>
+		<div class="text_wrap"><h3>Currencies are expressed as their ISO 4217 codes.</h3></div>
+	</div>
+	<div class="download_wrap">
+		<table>
+			<tr>
+				<td class="name">USD to XXX <b>by DAY</b></td><td><a href="https://github.com/xriss/freechange/blob/master/csv/usd_to_xxx_by_day.csv">CSV <svg viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg" width="14" height="14"><path fill-rule="evenodd" clip-rule="evenodd" d="M7 9.358V1h1v8.293l2.146-2.147.708.708-3.34 3.34L3.91 7.866l.678-.734L7 9.358zM2 13V7H1v7h13V7h-1v6H2z" fill="currentColor"></path></svg></a></td><td><a href="https://github.com/xriss/freechange/blob/master/json/usd_to_xxx_by_day.json">JSON <svg viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg" width="14" height="14"><path fill-rule="evenodd" clip-rule="evenodd" d="M7 9.358V1h1v8.293l2.146-2.147.708.708-3.34 3.34L3.91 7.866l.678-.734L7 9.358zM2 13V7H1v7h13V7h-1v6H2z" fill="currentColor"></path></svg></a></td>
+			</tr>
+			<tr>
+				<td class="name">USD to XXX <b>by MONTH</b></td><td><a href="https://github.com/xriss/freechange/blob/master/csv/usd_to_xxx_by_month.csv">CSV <svg viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg" width="14" height="14"><path fill-rule="evenodd" clip-rule="evenodd" d="M7 9.358V1h1v8.293l2.146-2.147.708.708-3.34 3.34L3.91 7.866l.678-.734L7 9.358zM2 13V7H1v7h13V7h-1v6H2z" fill="currentColor"></path></svg></a></td><td><a href="https://github.com/xriss/freechange/blob/master/json/usd_to_xxx_by_month.json">JSON <svg viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg" width="14" height="14"><path fill-rule="evenodd" clip-rule="evenodd" d="M7 9.358V1h1v8.293l2.146-2.147.708.708-3.34 3.34L3.91 7.866l.678-.734L7 9.358zM2 13V7H1v7h13V7h-1v6H2z" fill="currentColor"></path></svg></a></td>
+			</tr>
+			<tr>
+				<td class="name">USD to XXX <b>by YEAR</b></td><td><a href="https://github.com/xriss/freechange/blob/master/csv/usd_to_xxx_by_year.csv">CSV <svg viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg" width="14" height="14"><path fill-rule="evenodd" clip-rule="evenodd" d="M7 9.358V1h1v8.293l2.146-2.147.708.708-3.34 3.34L3.91 7.866l.678-.734L7 9.358zM2 13V7H1v7h13V7h-1v6H2z" fill="currentColor"></path></svg></a></td><td><a href="https://github.com/xriss/freechange/blob/master/json/usd_to_xxx_by_year.json">JSON <svg viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg" width="14" height="14"><path fill-rule="evenodd" clip-rule="evenodd" d="M7 9.358V1h1v8.293l2.146-2.147.708.708-3.34 3.34L3.91 7.866l.678-.734L7 9.358zM2 13V7H1v7h13V7h-1v6H2z" fill="currentColor"></path></svg></a></td>
+			</tr>
+		</table>
+	</div>
+	<div class="mid_wrap">
+		<div class="text_wrap"><h3>Data is grabbed from a variety of sources, including <b>IMF</b>, <b>FRED</b>, <b>Code for IATI</b> and <b>OECD</b>.</h3></div>
+	</div>
 </div>
 <div class="wrap">
 	<div class="foot_wrap">
 		<div class="foot_cont">
 			<div class="foot_bold"><p>About</p></div>
 			<div class="foot_text">
-				Data conversion is made locally in the browser and never sent to an external server.
+				Freechange is a javascript module and data to perform historical currency exchange.
 			</div>
 			<div class="foot_text">
-				Freechange is a javascript module and data to perform historical currency exchange.
+				Data conversion is made locally in the browser and never sent to an external server.
 			</div>
 			<div class="foot_bold">
 				<p>Project page, issues and feedback on <a href="https://github.com/xriss/freechange" target="_blank">Github</a>.</p>
@@ -74,7 +101,7 @@ Freechange
 			<div class="foot_bold"><p>Other tools</p></div>
 			<div class="foot_text"><a href="http://d-preview.codeforiati.org/">d-preview</a></div>
 			<div class="foot_text"><p><a href="https://notshi.github.io/IATIswitcheroo/">IATI Switcheroo</a></p></div>
-			<div class="foot_text"><a href="https://xriss.github.io/freechange-charts/">Freechange</a></div>
+			<div class="foot_text"><a href="https://xriss.github.io/freechange/">Freechange</a></div>
 			<div class="foot_text"><p><a href="https://notshi.github.io/cleanerr">Cleanerr</a></p></div>
 			<div class="foot_text"><a href="https://xriss.github.io/D-Portal-Logs/">d-portal logs</a></div>
 		</div>
